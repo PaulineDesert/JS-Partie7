@@ -47,16 +47,24 @@
   <script>
     let idButton = document.getElementsByTagName('button');
     let idBody = document.getElementsByTagName('body');
+    // let idDiv = document.querySelector('div')
 
-    idButton[0].onclick = function () {
+    idButton[0].onclick = changeBold;
+    idButton[1].onclick = changeColor;
+    idButton[2].onclick = changeSize;
+    
+    function changeBold() {
       idBody[0].style.fontWeight = 'bold';
     }
-    idButton[1].onclick = function () {
+
+    function changeColor () {
       idBody[0].style.color = 'blue';
     }
-    idButton[2].onclick = function () {
+
+    function changeSize () {
       idBody[0].style.fontSize = '2rem';
     }
+    
   </script>
 </body>
 </html>

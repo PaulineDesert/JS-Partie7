@@ -31,11 +31,19 @@
     <script>
         let idNumber1 = document.getElementById('number1');
         let idNumber2 = document.getElementById('number2');
+        let idButton = document.getElementById('calculButton');
 
-        calculButton.onclick = function () {
-            let result = idNumber1.value * idNumber2.value;
-            return console.log(result);
+        function multiplication(idNumber1, idNumber2){
+            return console.log(idNumber1 * idNumber2)
         }
+        idButton.addEventListener('click', function() {
+            multiplication(idNumber1.value, idNumber2.value)
+        })
+
+        // calculButton.onclick = function () {
+        //     let result = idNumber1.value * idNumber2.value;
+        //     return console.log(result);
+        // }
 
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
